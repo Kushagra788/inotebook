@@ -54,11 +54,12 @@ if(!note){return res.status(404).send("note not found")}
 
 //check jo user ka note hai vahi usko update kar ra hai ya nahi
 if(note.user.toString()!==req.user.id){
-    return res.status(401).send("acess denied");
+    return res.status(401).send("not allowed")
 }
 //update note
 note=await Note.findByIdAndUpdate(req.params.id,{$set:newNote},{new:true})
 res.json({note});
+
   })
   //Route 4: delete an existing note using DELETE: "api/notes/deletenote". lOGIN REQUIRED
 router.delete('/deletenote/:id',fetchuser,async (req, res) => {
