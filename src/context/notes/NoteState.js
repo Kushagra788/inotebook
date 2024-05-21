@@ -13,7 +13,7 @@ const getNotes = async () => {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
+      "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
     },
   });
   const json=await response.json()
@@ -27,7 +27,7 @@ const getNotes = async () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
+        "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
       },
       body: JSON.stringify({title,description,tag})
 
@@ -42,7 +42,7 @@ const getNotes = async () => {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
+        "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
       },
       body: JSON.stringify({title,description,tag})
     });
@@ -69,7 +69,7 @@ const getNotes = async () => {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
-        "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
+        "auth-token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY0MjA4ODY0OGFkMDllMGU5NjIwNzZhIn0sImlhdCI6MTcxNTYwMzYyNX0.pBMwTBSZcD-a9lNOWHRs2ljEy2L--YKvU2t5v5RZYRM"
       },
     });
     const json= response.json(); 
